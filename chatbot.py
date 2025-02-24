@@ -23,8 +23,7 @@ def get_custom_prompt():
 "2. If the answer isn't in the documents, say: 'I cannot find relevant information in the provided documents.'\n"
 "3. Do not speculate, assume, or invent information.\n"
 "4. Maintain a professional tone and organize responses clearly.\n"
-"5. Encourage follow-up questions by asking if further clarification is needed.\n"
-"6. Keep answers concise, focused, and relevant to the question."
+"5. Keep answers concise, focused, and relevant to the question."
         ),
         HumanMessagePromptTemplate.from_template(
             "Context:\n{context}\n\n"
