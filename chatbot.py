@@ -40,7 +40,7 @@ def get_custom_prompt():
 # Initialize QA Chain
 def initialize_qa_chain():
     if not st.session_state.qa_chain and st.session_state.vector_store:
-        llm = ChatOllama(model="deepseek-r1:7b", temperature=0.6)
+        llm = ChatOllama(model="deepseek-r1:7b", temperature=0.1)
         retriever = get_retriever()
 
         st.session_state.qa_chain = RetrievalQA.from_chain_type(
