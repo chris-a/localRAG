@@ -28,7 +28,7 @@ def get_custom_prompt():
         HumanMessagePromptTemplate.from_template(
             "Context:\n{context}\n\n"
             "Question: {question}\n\n"
-            "Provide a precise and well-structured answer based on the context above. "
+            "Provide a 4 to 5 paragraph answer based on the context above that is precise and well-structured. "
         )
     ])
     else:
