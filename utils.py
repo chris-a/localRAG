@@ -80,7 +80,7 @@ def get_retriever():
         )
 
         # Return the retriever with MMR (Maximum Marginal Relevance) search and k=3
-        return vector_store.as_retriever(search_type="MMR", search_kwargs={"k": 3})
+        return vector_store.as_retriever(search_type="mmr", search_kwargs={"k": 3})
 
     except Exception as e:
         print(f"Error initializing vector store: {e}")
